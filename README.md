@@ -25,6 +25,12 @@
 - [Technology Stack](#technology-stack)
 - [Database Design](#database-design)
   - [Key Entities](#key-entities)
+- [Feature Breakdown](#feature-breakdown)
+  - [User Management](#user-management)
+  - [Property Management](#property-management)
+  - [Booking System](#booking-system)
+  - [Review System](#review-system)
+  - [Payment Processing](#payment-processing)
 
 <br />
 
@@ -188,8 +194,34 @@ QA engineers verify application requirements (functional/non-functional) through
 - `id` (Primary Key)
 - `property_id` (Foreign Key to Properties)
 - `author_id` (Foreign Key to Users)
-- `rating`
 - `comment`
+- `rating`
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
+### Feature Breakdown
+
+#### User Management
+Implements user registration, authentication, and profile management, with secure access guaranteed by JWT authentication in conjunction with OAuth 2.0.
+
+#### Property Management
+Enables hosts to manage property listings (create, update, delete), including media uploads and availability calendars.
+
+#### Booking System
+Provides robust functionalities for managing the reservation lifecycle, resolving date conflicts, and calculating pricing.
+
+#### Review System
+Facilitates guest ratings and comments, supported by moderation tools for content quality.
+
+#### Payment Processing
+Facilitates secure transactions via payment gateway integration and oversees all aspects of refunds and payment verification.
+
 ---
 
 <br />
