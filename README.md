@@ -223,6 +223,8 @@ QA engineers verify application requirements (functional/non-functional) through
 #### User Management
 Implements user registration, authentication, and profile management, with secure access guaranteed by JWT authentication in conjunction with OAuth 2.0.
 
+<br />
+
 #### Property Management
 Enables hosts to manage property listings (create, update, delete), including media uploads and availability calendars.
 
@@ -247,6 +249,7 @@ Facilitates secure transactions via payment gateway integration and oversees all
 ### API Security
 
 Security is vital for protecting user data, securing payments, and guarding property listings and bookings from fraud. This ensures API and system integrity, fostering user trust and platform reliability.
+<br />
 
 #### Key Security Measures
 - **Authentication**: Secure user authentication through a JWT and OAuth 2.0 token system.
@@ -272,6 +275,7 @@ Security is vital for protecting user data, securing payments, and guarding prop
 ### CI/CD Pipeline
 
 Continuous Integration/Continuous Deployment (CI/CD) pipelines automate building, testing, and deploying software. This ensures faster, more reliable delivery, crucial for project efficiency, quality, and rapid feature releases.
+<br />
 
 #### Implementation
 - **GitHub Actions**: Automates building, testing, deploying code from your workflow.
