@@ -23,6 +23,8 @@
   - [DevOps Engineer](#devops-engineer)
   - [Quality Assurance (QA) Engineer](#quality-assurance-qa-engineer)
 - [Technology Stack](#technology-stack)
+- [Database Design](#database-design)
+  - [Key Entities](#key-entities)
 
 <br />
 
@@ -66,7 +68,7 @@ Backend developers implement an application's core algorithms and business logic
 The DBA oversees the system's data layer to guarantee its efficiency, security, and scalability.
 
 **Key Responsibilities:**
-- Design, optimize, and secure efficient database schemas according to the project requirements. (e.g., users, listings, bookings, payments, etc.).
+- Design, optimize, and secure efficient database schemas according to the project requirements. (e.g., users, listings, bookings, transactions, etc.).
 - Ensure performance, data integrity, implement robust security, and manage backup strategies. .
 - Effective collaboration with developers to ensures seamless and scalable data interactions.
 
@@ -121,6 +123,73 @@ QA engineers verify application requirements (functional/non-functional) through
 - **Docker:** Containerization tool for consistent development and deployment environments.
 - **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
 - **Markdown:** Documentation	 
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
+
+### Database Design
+
+#### Key Entities
+
+**Profiles:** Stores information about profile of users registered on the platform (e.g hosts, guests, etc.).
+- `id` (Primary Key)
+- `name` (Unique)
+- `created_at`
+- Relationships: One-to-Many with Users
+  
+**Users:** Stores information about users registered on the platform.
+- `id` (Primary Key)
+- `email` (Unique)
+- `password_hash`
+- `profile_id` (Foreign Key to Profiles)
+- `created_at`
+- Relationships: One-to-Many with Properties, Bookings, Reviews
+
+**Properties:** Contains details of properties available for booking.
+- `id` (Primary Key)
+- `title` 
+- `price`
+- `description`
+- `location`
+- `host_id` (Foreign Key to Users)
+- Relationships: One-to-Many with Bookings, Reviews, Amenities
+
+**Amenities:** Contains a list of amenities available for properties.
+- `id` (Primary Key)
+- `name` (Unique)
+- `qty`	 
+
+**PropertFeatures:** Represents the relationship between properties and amenities.
+- `id` (Primary Key)
+- `property_id`	(Foreign Key to Proprties)
+- `amenity_id` (Foreign Key to Amenities)
+- Unique key: (`property_id`, `amenity_id`)
+  
+**Bookings:** Stores booking details made by users for properties.
+- `id` (Primary Key)
+- `property_id` (Foreign Key to Properties)
+- `guest_id` (Foreign Key to Users)
+- `start_date`
+- `end_date`
+
+**Transactions**
+- `id` (Primary Key)
+- `booking_id` (Foreign Key to Bookings)
+- `amount`
+- `status`	 
+
+**Reviews**
+- `id` (Primary Key)
+- `property_id` (Foreign Key to Properties)
+- `author_id` (Foreign Key to Users)
+- `rating`
+- `comment`
 ---
 
 <br />
