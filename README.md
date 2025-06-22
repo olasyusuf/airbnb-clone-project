@@ -17,7 +17,7 @@
 
 - [Table of contents](#table-of-contents)
 - [Project Overview](#project-overview)
-- [Team Roles and Responsibilities](#team-roles-and-responsibilities)
+- [Team Roles](#team-roles)
   - [Backend Developer](#backend-developer)
   - [Database Administrator (DBA)](#database-administrator-dba)
   - [DevOps Engineer](#devops-engineer)
@@ -31,6 +31,9 @@
   - [Booking System](#booking-system)
   - [Review System](#review-system)
   - [Payment Processing](#payment-processing)
+- [API Security](#api-security)
+  - [Key Security Measures](#key-security-measures)
+  - [Security Critical Areas](#security-critical-areas)
 
 <br />
 
@@ -48,7 +51,7 @@ The Airbnb Clone Project is a comprehensive, real-world application aimed at rep
   [ [↑ to top ↑](#table-of-contents) ]
 </div>
 
-### Team Roles and Responsibilities
+### Team Roles
 Effective collaboration and the delivery of high-quality results in the **Airbnb Clone Project** depend on a clear definition of roles and responsibilities. The following section outlines each core role and its key responsibilities:
 
 <br />
@@ -153,8 +156,8 @@ QA engineers verify application requirements (functional/non-functional) through
 - `id` (Primary Key)
 - `email` (Unique)
 - `password_hash`
-- `profile_id` (Foreign Key to Profiles)
 - `created_at`
+- `profile_id` (Foreign Key to Profiles)
 - Relationships: One-to-Many with Properties, Bookings, Reviews
 
 **Properties:** Contains details of properties available for booking.
@@ -163,6 +166,7 @@ QA engineers verify application requirements (functional/non-functional) through
 - `price`
 - `description`
 - `location`
+- `created_at`
 - `host_id` (Foreign Key to Users)
 - Relationships: One-to-Many with Bookings, Reviews, Amenities
 
@@ -170,32 +174,38 @@ QA engineers verify application requirements (functional/non-functional) through
 - `id` (Primary Key)
 - `name` (Unique)
 - `qty`	 
+- `created_at`
 
 **PropertFeatures:** Represents the relationship between properties and amenities.
 - `id` (Primary Key)
+- `created_at`
 - `property_id`	(Foreign Key to Proprties)
 - `amenity_id` (Foreign Key to Amenities)
 - Unique key: (`property_id`, `amenity_id`)
   
 **Bookings:** Stores booking details made by users for properties.
 - `id` (Primary Key)
-- `property_id` (Foreign Key to Properties)
-- `guest_id` (Foreign Key to Users)
 - `start_date`
 - `end_date`
+- `created_at`
+- `property_id` (Foreign Key to Properties)
+- `guest_id` (Foreign Key to Users)
 
 **Transactions**
 - `id` (Primary Key)
-- `booking_id` (Foreign Key to Bookings)
 - `amount`
+- `payment_method`
 - `status`	 
+- `created_at`
+- `booking_id` (Foreign Key to Bookings)
 
 **Reviews**
 - `id` (Primary Key)
-- `property_id` (Foreign Key to Properties)
-- `author_id` (Foreign Key to Users)
 - `comment`
 - `rating`
+- `created_at`
+- `property_id` (Foreign Key to Properties)
+- `author_id` (Foreign Key to Users)
 ---
 
 <br />
@@ -221,6 +231,29 @@ Facilitates guest ratings and comments, supported by moderation tools for conten
 
 #### Payment Processing
 Facilitates secure transactions via payment gateway integration and oversees all aspects of refunds and payment verification.
+
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
+### API Security
+
+#### Key Security Measures
+- **Authentication**: Secure user authentication through a JWT and OAuth 2.0 token system.
+- **Authorization**: Endpoint security through Role-Based Access Control (RBAC).
+- **Rate Limiting**: Implements measures to prevent brute-force attacks and API abuse.
+- **Data Encryption**: Employs TLS for data in transit and AES-256 encryption for sensitive data.
+
+#### Security Critical Areas
+- **User Data**: Implements encryption and access controls to protect Personally identifiable information (PII). 
+- **Admin Systems**: Implements multi-factor authentication (MFA) for privileged access.
+- **APIs**: Prevents SQL injection and XSS attacks with robust input validation.
+- **Payments**: Adheres to Payment Card Industry Data Security Standard (PCI-DSS) standards for all financial transactions.
 
 ---
 
