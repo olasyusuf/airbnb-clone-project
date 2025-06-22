@@ -16,13 +16,18 @@
 ### Table of contents
 
 - [Table of contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Project Goals](#project-goals)
-  - [Technology Stack](#technology-stack)
+- [Project Overview](#project-overview)
+- [Project Goals](#project-goals)
+- [Technology Stack](#technology-stack)
+- [Team Roles and Responsibilities](#team-roles-and-responsibilities)
+  - [Backend Developer](#backend-developer)
+  - [Database Administrator (DBA)](#database-administrator-dba)
+  - [DevOps Engineer](#devops-engineer)
+  - [Quality Assurance (QA) Engineer](#quality-assurance-qa-engineer)
 
 <br />
 
-#### Project Overview
+### Project Overview
 
 
 The Airbnb Clone Project is a comprehensive, real-world application aimed at replicating a robust and scalable booking platform, similar to Airbnb. This initiative delves deep into full-stack development, emphasizing critical areas such as backend systems, efficient database design, secure API development, and robust application security. For its backend, the project will specifically utilize Django and PostgreSQL, adhering to established RESTful API principles.
@@ -36,7 +41,7 @@ The Airbnb Clone Project is a comprehensive, real-world application aimed at rep
   [ [↑ to top ↑](#table-of-contents) ]
 </div>
 
-#### Project Goals
+### Project Goals
 
 - **User Management:** Implement a secure system for user registration, authentication, and profile management.
 
@@ -59,7 +64,7 @@ The Airbnb Clone Project is a comprehensive, real-world application aimed at rep
   [ [↑ to top ↑](#table-of-contents) ]
 </div>
 
-#### Technology Stack
+### Technology Stack
 
 
 - **Django:** A high-level Python web framework used for building the RESTful API.
@@ -72,6 +77,75 @@ The Airbnb Clone Project is a comprehensive, real-world application aimed at rep
 - **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
 
 - **Markdown:** Documentation	 
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
+### Team Roles and Responsibilities
+Effective collaboration and the delivery of high-quality results in the **Airbnb Clone Project** depend on a clear definition of roles and responsibilities. The following section outlines each core role and its key responsibilities:
+
+<br />
+
+#### Backend Developer
+
+**Role Overview:**  
+Backend developers implement an application's core algorithms and business logic, with experienced professionals also architecting its structure and designing integrations.
+
+**Key Responsibilities:**
+- Designs and implements the underlying business logic for user management, booking functionalities, property listings, and financial transactions.
+- Creates robust API endpoints utilizing Django REST Framework or GraphQL.
+- Coordinates with the Database Administrator for effective data interaction management.
+- Implements backend security measures against common vulnerabilities (e.g., authentication, authorization, input validation).
+- Delivers high-quality code that is modular, reusable, and maintainable.
+- Addresses emerging technical issues during development.
+
+<br />
+
+#### Database Administrator (DBA)
+
+**Role Overview:**  
+The DBA oversees the system's data layer to guarantee its efficiency, security, and scalability.
+
+**Key Responsibilities:**
+- Design, optimize, and secure efficient database schemas according to the project requirements. (e.g., users, listings, bookings, payments, etc.).
+- Ensure performance, data integrity, implement robust security, and manage backup strategies. .
+- Effective collaboration with developers to ensures seamless and scalable data interactions.
+
+<br />
+
+#### DevOps Engineer
+
+**Role Overview:**  
+DevOps engineers bridge development and operations teams, automating software delivery via CI/CD. They balance rapid changes with application stability, collaborating to facilitate code releases and ensure seamless operations, even in Agile environments.
+
+**Key Responsibilities:**
+- Streamlines collaboration between development and operations teams.
+- Building and maintaining automated pipelines for backend code integration, testing, and deployment.
+- Provisioning and managing backend infrastructure (servers, databases, message queues) on cloud or on-premise platforms through Infrastructure as Code (IaC).
+- Leverages Docker to containerize the application, enhancing development and deployment efficiency.
+- Implementing comprehensive monitoring, alerting, and logging solutions for backend application performance, health, and issues.
+- Designing and implementing solutions to ensure backend systems are scalable, highly available, and resilient.
+- Integrating security practices into the entire backend development and deployment lifecycle.
+
+<br />
+
+#### Quality Assurance (QA) Engineer
+
+**Role Overview:**  
+QA engineers verify application requirements (functional/non-functional) through various tests, analyze results, and report quality, ensuring functionality, usability, security, and performance.
+
+**Key Responsibilities:**
+- Ensures application performance aligns with requirements.
+- Creates and performs manual and automated test cases to ensure backend functionality.
+- Thoroughly tests API endpoints for reliability, correctness, and all edge cases.
+- Spots functional and non-functional defects.
+- Collaborate with developers to implement test-driven development (TDD) practices.
+- Validate performance, security, and usability standards.	 
 ---
 
 <br />
