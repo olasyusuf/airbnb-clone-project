@@ -29,14 +29,14 @@
   - [User Management](#user-management)
   - [Property Management](#property-management)
   - [Booking System](#booking-system)
-  - [Review System](#review-system)
   - [Payment Processing](#payment-processing)
+  - [Review System](#review-system)
 - [API Security](#api-security)
-  - [Key Security Measures](#key-security-measures)
-  - [Security Critical Areas](#security-critical-areas)
+  - [Key Measures](#key-measures)
+  - [Critical Areas](#critical-areas)
 - [CI/CD Pipeline](#cicd-pipeline)
-  - [Implementation](#implementation)
   - [Benefits](#benefits)
+  - [Implementation](#implementation)
 
 <br />
 
@@ -229,11 +229,12 @@ Enables hosts to manage property listings (create, update, delete), including me
 #### Booking System
 Provides robust functionalities for managing the reservation lifecycle, resolving date conflicts, and calculating pricing.
 
+#### Payment Processing
+Facilitates secure transactions via payment gateway integration and oversees all aspects of refunds and payment verification.
+
 #### Review System
 Facilitates guest ratings and comments, supported by moderation tools for content quality.
 
-#### Payment Processing
-Facilitates secure transactions via payment gateway integration and oversees all aspects of refunds and payment verification.
 
 ---
 
@@ -250,13 +251,13 @@ Security is vital for protecting user data, securing payments, and guarding prop
 
 <br />
 
-#### Key Security Measures
+#### Key Measures
 - **Authentication**: Secure user authentication through a JWT and OAuth 2.0 token system.
 - **Authorization**: Endpoint security through Role-Based Access Control (RBAC).
 - **Rate Limiting**: Implements measures to prevent brute-force attacks and API abuse.
 - **Data Encryption**: Employs TLS for data in transit and AES-256 encryption for sensitive data.
 
-#### Security Critical Areas
+#### Critical Areas
 - **User Data**: Implements encryption and access controls to protect Personally identifiable information (PII). 
 - **Admin Systems**: Implements multi-factor authentication (MFA) for privileged access.
 - **APIs**: Prevents SQL injection and XSS attacks with robust input validation.
@@ -277,11 +278,6 @@ Continuous Integration/Continuous Deployment (CI/CD) pipelines automate building
 
 <br />
 
-#### Implementation
-- **GitHub Actions**: Automates building, testing, deploying code from your workflow.
-- **Docker Containers**: package applications and dependencies, ensuring consistent environments, dev to prod.
-- **Amazon CloudWatch**: An open-source system for collecting and aggregating CI/CD metrics.
-
 #### Benefits
 - Consistent environments
 - Early bug detection through automated testing, improved code qualit
@@ -289,6 +285,11 @@ Continuous Integration/Continuous Deployment (CI/CD) pipelines automate building
 - Reduced manual deployment errors
 - Provides robust rollback functionality for failed deployments.
 - Better collaboration
+  
+#### Implementation
+- **GitHub Actions**: Automates building, testing, deploying code from your workflow.
+- **Docker Containers**: package applications and dependencies, ensuring consistent environments, dev to prod.
+- **Amazon CloudWatch**: An open-source system for collecting and aggregating CI/CD metrics.
 
 ---
 
