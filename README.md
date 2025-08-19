@@ -15,35 +15,57 @@
 
 ### Table of contents
 
-- [Table of contents](#table-of-contents)
 - [Project Overview](#project-overview)
-- [Team Roles](#team-roles)
-  - [Backend Developer](#backend-developer)
-  - [Database Administrator (DBA)](#database-administrator-dba)
-  - [DevOps Engineer](#devops-engineer)
-  - [Quality Assurance (QA) Engineer](#quality-assurance-qa-engineer)
-- [Technology Stack](#technology-stack)
-- [Database Design](#database-design)
-  - [Key Entities](#key-entities)
-- [Feature Breakdown](#feature-breakdown)
-  - [User Management](#user-management)
-  - [Property Management](#property-management)
-  - [Booking System](#booking-system)
-  - [Payment Processing](#payment-processing)
-  - [Review System](#review-system)
-- [API Security](#api-security)
-  - [Key Measures](#key-measures)
-  - [Critical Areas](#critical-areas)
-- [CI/CD Pipeline](#cicd-pipeline)
-  - [Benefits](#benefits)
-  - [Implementation](#implementation)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+- [Frontend Specification](#frontend-specification)
+  - [Technology Stack](#technology-stack)
+  - [UI/UX Design Planning](#uiux-design-planning)
+    - [Design Goals](#design-goals)
+    - [Key Features](#key-features)
+  - [Primary Pages](#primary-pages)
+  - [Importance of User-Friendly Design](#importance-of-user-friendly-design)
+  - [Figma Design Specifications](#figma-design-specifications)
+  - [Typography:](#typography)
+  - [Importance of Identifying Design Properties of a Mockup Design](#importance-of-identifying-design-properties-of-a-mockup-design)
+  - [Project Roles and Responsibilities](#project-roles-and-responsibilities)
+  - [UI Component Patterns](#ui-component-patterns)
+- [Backend Specification](#backend-specification)
+  - [Team Roles](#team-roles)
+    - [Backend Developer](#backend-developer)
+    - [Database Administrator (DBA)](#database-administrator-dba)
+    - [DevOps Engineer](#devops-engineer)
+    - [Quality Assurance (QA) Engineer](#quality-assurance-qa-engineer)
+  - [Technology Stack](#technology-stack-1)
+  - [Database Design](#database-design)
+    - [Key Entities](#key-entities)
+  - [Feature Breakdown](#feature-breakdown)
+    - [User Management](#user-management)
+    - [Property Management](#property-management)
+    - [Booking System](#booking-system)
+    - [Payment Processing](#payment-processing)
+    - [Review System](#review-system)
+  - [API Security](#api-security)
+    - [Key Measures](#key-measures)
+    - [Critical Areas](#critical-areas)
+  - [CI/CD Pipeline](#cicd-pipeline)
+    - [Benefits](#benefits)
+    - [Implementation](#implementation)
 
 <br />
 
-### Project Overview
+## Project Overview
+
+The Airbnb Clone Project is a comprehensive, real-world application aimed at replicating a robust and scalable booking platform, similar to Airbnb. 
 
 
-The Airbnb Clone Project is a comprehensive, real-world application aimed at replicating a robust and scalable booking platform, similar to Airbnb. The goal is to create a scalable platform for property rentals with features like user management, property listings, bookings, reviews, and secure payments. For its backend, the project will specifically utilize Django and PostgreSQL, adhering to established RESTful API principles.
+### Frontend
+The frontend will focus on building a functional web application for users to interact with. This includes creating a user interface where people can browse property listings, view detailed information for each property, and complete the booking process. The goal is to provide a smooth and intuitive user experience that replicates the look and feel of a professional booking platform.
+
+<br />
+
+### Backend
+The backend will be built to serve as the core of the application, managing all the data and logic. Using **Django** and **PostgreSQL**, the project will create a scalable platform that handles everything from user management and property listings to bookings, reviews, and secure payments. All of this will be exposed through a **RESTful API**, ensuring the backend is robust and reliable.
 
 ---
 
@@ -53,6 +75,115 @@ The Airbnb Clone Project is a comprehensive, real-world application aimed at rep
 
   [ [↑ to top ↑](#table-of-contents) ]
 </div>
+
+
+## Frontend Specification
+
+
+### Technology Stack
+
+- **Frontend:** HTML, CSS, JavaScript (React or similar framework).
+- **Version Control:** Git and GitHub for version control and collaboration.
+- **Design Tools:** Figma for UI/UX design.
+- **Markdown:** Documentation	 
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
+
+
+### UI/UX Design Planning
+#### Design Goals
+- Create intuitive booking flow
+- Maintain visual consistency
+- Ensure fast loading times
+- Prioritize mobile responsiveness
+#### Key Features
+- Property search and filtering
+- Detailed property viewing
+- Secure checkout process
+- User authentication
+
+### Primary Pages
+
+| Page                  | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| Property Listing View | Grid display of available properties with filters                           |
+| Listing Detailed View | Complete property details with images and booking form                      |
+| Simple Checkout View  | Streamlined payment and booking confirmation                                |
+
+
+### Importance of User-Friendly Design
+A well-designed booking system reduces friction in the user journey, increases conversion rates, and improves customer satisfaction. Clear navigation, intuitive interfaces, and responsive design are critical for success.
+
+### Figma Design Specifications
+Color Styles:
+- Primary: `#FF5A5F`
+- Secondary: `#008489`
+- Background: `#FFFFFF`
+- Text: `#222222`
+- Secondary Text: `#717171`
+  
+### Typography:
+- Primary Font: Circular, Medium (500), 16px
+- Headings: Circular, Bold (700), 24px-32px
+- Secondary Text: Circular, Book (400), 14px
+  
+###  Importance of Identifying Design Properties of a Mockup Design
+- Ensures Accurate Implementation
+- Maintains Consistency
+- Improves Developer-Designer Collaboration
+- Speeds Up Development
+- Supports Responsiveness
+- Aids Accessibility
+
+### Project Roles and Responsibilities
+
+| Role               | Responsibilities                                                             |
+|--------------------|------------------------------------------------------------------------------|
+| Project Manager    | Oversees timeline, coordinates team, manages deliverables                    |
+| Frontend Developers| Implements UI components, ensures responsive design                          |
+| Backend Developers | Builds APIs, manages database, implements business logic                     |
+| Designers          | Creates mockups, maintains design system, ensures UX quality                 |
+| QA/Testers         | Writes test cases, performs testing, reports bugs                            |
+| DevOps Engineers   | Manages deployment, CI/CD pipeline, server infrastructure                    |
+| Product Owner      | Defines requirements, prioritizes features, represents stakeholders          |
+| Scrum Master       | Facilitates agile processes, removes blockers, organizes meetings            |
+
+### UI Component Patterns
+**Planned Components**
+1. Navbar
+   - Logo
+   - Search bar
+   - User navigation
+   - Responsive menu
+2. Property Card
+   - Property image
+   - Basic details (price, location, rating)
+   - Favorite button
+   - Responsive layout
+3. Footer
+   - Site links
+   - Company information
+   - Social media links
+   - Copyright information
+   - Each component will be designed for reusability and consistency across the application. 
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
+
+## Backend Specification
 
 ### Team Roles
 Effective collaboration and the delivery of high-quality results in the **Airbnb Clone Project** depend on a clear definition of roles and responsibilities. The following section outlines each core role and its key responsibilities:
@@ -134,6 +265,7 @@ QA engineers verify application requirements (functional/non-functional) through
 - **Redis:** Used for caching and session management.
 - **Docker:** Containerization tool for consistent development and deployment environments.
 - **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
+- **Version Control:** Git and GitHub for version control and collaboration.
 - **Markdown:** Documentation	 
 ---
 
