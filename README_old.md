@@ -7,7 +7,7 @@
 
 ---
 
-![Preview of app](images\airbnb.jpg)
+![Preview of app](https://cdn.africanvibes.com/wp-content/uploads/2021/09/12172528/20-Airnb-Homes-in-Nigeria.jpg)
 
 ---
 
@@ -176,14 +176,14 @@ QA engineers verify application requirements (functional/non-functional) through
 **Amenities:** Contains a list of amenities available for properties.
 - `id` (Primary Key)
 - `name` (Unique)
-- `created_at`
-
-**PropertyFeatures:** Represents the relationship between properties and amenities.
-- `id` (Primary Key)
-- `property_id`	(Foreign Key to Proprties)
-- `amenity_id` (Foreign Key to Amenities)
 - `qty`	 
 - `created_at`
+
+**PropertFeatures:** Represents the relationship between properties and amenities.
+- `id` (Primary Key)
+- `created_at`
+- `property_id`	(Foreign Key to Proprties)
+- `amenity_id` (Foreign Key to Amenities)
 - Unique key: (`property_id`, `amenity_id`)
   
 **Bookings:** Stores booking details made by users for properties.
