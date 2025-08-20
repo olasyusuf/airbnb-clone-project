@@ -7,7 +7,7 @@
 
 ---
 
-![Preview of app](images\airbnb.jpg)
+![Preview of app](images/airbnb.jpg)
 
 ---
 
@@ -20,21 +20,32 @@
   - [Backend](#backend)
 - [Frontend Specification](#frontend-specification)
   - [Technology Stack](#technology-stack)
+  - [Project Roles and Responsibilities](#project-roles-and-responsibilities)
+    - [Project Manager](#project-manager)
+    - [Designer](#designer)
+    - [Frontend Developer](#frontend-developer)
+    - [Backend Developer](#backend-developer)
+    - [QA/Tester](#qatester)
+    - [DevOps Engineer](#devops-engineer)
+    - [Product Owner](#product-owner)
+    - [Scrum Master](#scrum-master)
   - [UI/UX Design Planning](#uiux-design-planning)
     - [Design Goals](#design-goals)
     - [Key Features](#key-features)
-  - [Primary Pages](#primary-pages)
-  - [Importance of User-Friendly Design](#importance-of-user-friendly-design)
-  - [Figma Design Specifications](#figma-design-specifications)
-  - [Typography:](#typography)
+    - [Primary Pages](#primary-pages)
+    - [Importance of User-Friendly Design](#importance-of-user-friendly-design)
+    - [Figma Design Specifications](#figma-design-specifications)
+    - [Typography:](#typography)
+    - [Importance of identifying design properties of a mock up design:](#importance-of-identifying-design-properties-of-a-mock-up-design)
+- [A consistent design helps users navigate the site easily, making it feel predictable, trustworthy, and intuitive.](#a-consistent-design-helps-users-navigate-the-site-easily-making-it-feel-predictable-trustworthy-and-intuitive)
   - [Importance of Identifying Design Properties of a Mockup Design](#importance-of-identifying-design-properties-of-a-mockup-design)
-  - [Project Roles and Responsibilities](#project-roles-and-responsibilities)
   - [UI Component Patterns](#ui-component-patterns)
+    - [Planned Components](#planned-components)
 - [Backend Specification](#backend-specification)
   - [Team Roles](#team-roles)
-    - [Backend Developer](#backend-developer)
+    - [Backend Developer](#backend-developer-1)
     - [Database Administrator (DBA)](#database-administrator-dba)
-    - [DevOps Engineer](#devops-engineer)
+    - [DevOps Engineer](#devops-engineer-1)
     - [Quality Assurance (QA) Engineer](#quality-assurance-qa-engineer)
   - [Technology Stack](#technology-stack-1)
   - [Database Design](#database-design)
@@ -79,7 +90,6 @@ The backend will be built to serve as the core of the application, managing all 
 
 ## Frontend Specification
 
-
 ### Technology Stack
 
 - **Frontend:** HTML, CSS, JavaScript (React or similar framework).
@@ -96,6 +106,103 @@ The backend will be built to serve as the core of the application, managing all 
 </div>
 
 
+### Project Roles and Responsibilities
+
+#### Project Manager
+
+**Role Overview:**  
+They're responsible for planning and executing the project. They manage the timeline, budget, and resources, making sure the team stays on track.
+
+- **Responsibilities**: Creating the project plan, setting deadlines, allocating resources, and managing risks.
+
+- **Contribution**: Ensures the project is completed on time and within budget by coordinating all the moving parts and keeping the team aligned with the overall goal.
+
+<br />
+
+#### Designer
+
+**Role Overview:**  
+They create the visual layout and user experience (UX) of the product. They produce mockups, wireframes, and prototypes, ensuring the design is both aesthetically pleasing and easy to use.
+
+- **Responsibilities**: Conducting user research, creating wireframes and mockups, and defining the overall user experience and visual design.
+
+- **Contribution**: Their work ensures the product is intuitive, aesthetically pleasing, and meets user needs, which is critical for user adoption and satisfaction.
+
+<br />
+
+#### Frontend Developer
+
+**Role Overview:**  
+This person builds the part of the website users see and interact with. They use languages like HTML, CSS, and JavaScript to create the user interface and ensure it's responsive and functional.
+
+- **Responsibilities**: Translating the designer’s mockups into code, building interactive features, and optimizing the application for performance.
+
+- **Contribution**: They are directly responsible for the user-facing part of the application, which is what users see and interact with, ultimately shaping the user's perception of the product.
+
+<br />
+
+#### Backend Developer
+
+**Role Overview:**  
+They're the ones who work on the server-side logic and database. They build the APIs that the frontend uses to get data and handle things like user authentication and data storage.
+
+- **Responsibilities**: Designing the database schema, writing APIs, and handling server-side logic for data processing and storage.
+
+- **Contribution**: They provide the essential foundation for the frontend, ensuring that the application can securely store, retrieve, and process data, making the user interface functional.
+
+<br />
+
+#### QA/Tester
+
+**Role Overview:**  
+Their job is to find and report bugs. They test the application to make sure it functions as expected and that the user experience is smooth and without errors.
+
+- **Responsibilities**: Writing test plans, performing manual and automated tests, and documenting bugs.
+
+- **Contribution**: They guarantee the quality and reliability of the application by finding defects before they reach the user, which protects the project's reputation and prevents poor user experiences.
+
+<br />
+
+#### DevOps Engineer
+
+**Role Overview:**  
+They manage the infrastructure for the project. They are responsible for things like deployment, continuous integration (CI), and continuous delivery (CD) to get the code from the developer's machine to the live server.
+
+- **Responsibilities**: Setting up and managing the development environment, automating the build and deployment process, and monitoring the application's performance.
+
+- **Contribution**: They streamline the development workflow, enabling faster and more reliable code releases, which is essential for a continuous and efficient development cycle.
+
+<br />
+
+#### Product Owner
+
+**Role Overview:**  
+They represent the needs of the end user and the business. They define the product vision, prioritize features, and manage the product backlog to ensure the team is building the right thing.
+
+- **Responsibilities**: Defining and prioritizing the product backlog, communicating the vision to the team, and accepting finished work.
+
+- **Contribution**: By ensuring the team is always working on the most valuable features, they maximize the product's business value and ensure it meets market demands.
+
+<br />
+
+#### Scrum Master
+
+**Role Overview:**  
+A facilitator who ensures the team follows agile principles. They remove roadblocks, organize meetings, and help the team stay focused and collaborative.
+
+- **Responsibilities**: Facilitating daily stand-ups, sprint planning, and retrospectives. They also remove any obstacles that slow down the team.
+
+- **Contribution**: They promote a healthy, efficient, and collaborative environment, helping the team self-organize and consistently deliver high-quality work.
+
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
 
 ### UI/UX Design Planning
 #### Design Goals
@@ -103,25 +210,32 @@ The backend will be built to serve as the core of the application, managing all 
 - Maintain visual consistency
 - Ensure fast loading times
 - Prioritize mobile responsiveness
+  
+<br />
+
 #### Key Features
 - Property search and filtering
 - Detailed property viewing
 - Secure checkout process
 - User authentication
 
-### Primary Pages
+<br />
 
+#### Primary Pages
 | Page                  | Description                                                                 |
 |-----------------------|-----------------------------------------------------------------------------|
 | Property Listing View | Grid display of available properties with filters                           |
 | Listing Detailed View | Complete property details with images and booking form                      |
 | Simple Checkout View  | Streamlined payment and booking confirmation                                |
 
+<br />
 
-### Importance of User-Friendly Design
+#### Importance of User-Friendly Design
 A well-designed booking system reduces friction in the user journey, increases conversion rates, and improves customer satisfaction. Clear navigation, intuitive interfaces, and responsive design are critical for success.
 
-### Figma Design Specifications
+<br />
+
+#### Figma Design Specifications
 Color Styles:
 - Primary: `#FF5A5F`
 - Secondary: `#008489`
@@ -129,11 +243,31 @@ Color Styles:
 - Text: `#222222`
 - Secondary Text: `#717171`
   
-### Typography:
-- Primary Font: Circular, Medium (500), 16px
-- Headings: Circular, Bold (700), 24px-32px
-- Secondary Text: Circular, Book (400), 14px
-  
+<br />
+
+#### Typography:
+- Primary Font: `Circular, Medium (500), 16px`
+- Headings: `Circular, Bold (700), 24px-32px`
+- Secondary Text: `Circular, Book (400), 14px`
+ 
+<br />
+
+#### Importance of identifying design properties of a mock up design:
+- **Consistency and Standards**
+  It creates a **style guide** for fonts, colors, and spacing, ensuring a uniform look across the entire website.
+- **Efficient Development**
+  It provides a clear blueprint, allowing developers to build the site with consistent and predictable code, saving time.
+- **Consistency and Standards**
+  A consistent design helps users navigate the site easily, making it feel predictable, trustworthy, and intuitive.
+---
+
+<br />
+
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
+
 ###  Importance of Identifying Design Properties of a Mockup Design
 - Ensures Accurate Implementation
 - Maintains Consistency
@@ -141,38 +275,33 @@ Color Styles:
 - Speeds Up Development
 - Supports Responsiveness
 - Aids Accessibility
+---
 
-### Project Roles and Responsibilities
+<br />
 
-| Role               | Responsibilities                                                             |
-|--------------------|------------------------------------------------------------------------------|
-| Project Manager    | Oversees timeline, coordinates team, manages deliverables                    |
-| Frontend Developers| Implements UI components, ensures responsive design                          |
-| Backend Developers | Builds APIs, manages database, implements business logic                     |
-| Designers          | Creates mockups, maintains design system, ensures UX quality                 |
-| QA/Testers         | Writes test cases, performs testing, reports bugs                            |
-| DevOps Engineers   | Manages deployment, CI/CD pipeline, server infrastructure                    |
-| Product Owner      | Defines requirements, prioritizes features, represents stakeholders          |
-| Scrum Master       | Facilitates agile processes, removes blockers, organizes meetings            |
+<div align="right">
+
+  [ [↑ to top ↑](#table-of-contents) ]
+</div>
 
 ### UI Component Patterns
-**Planned Components**
-1. Navbar
+#### Planned Components
+ Each component will be designed for reusability and consistency across the application.
+- **Navbar**
    - Logo
    - Search bar
    - User navigation
    - Responsive menu
-2. Property Card
+- **Property Card**
    - Property image
    - Basic details (price, location, rating)
    - Favorite button
    - Responsive layout
-3. Footer
+- **Footer**
    - Site links
    - Company information
    - Social media links
    - Copyright information
-   - Each component will be designed for reusability and consistency across the application. 
 ---
 
 <br />
